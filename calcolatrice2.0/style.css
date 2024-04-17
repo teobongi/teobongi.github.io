@@ -1,0 +1,35 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.calcolatrice{
+    border: 2px solid #000;
+    width: 300px;
+    text-align: center;
+    background-color:purple;
+}
+.bottoni{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+}
+.schermo{
+    height: 25px;
+}
+.numero{
+    background-color:blue;
+    color:white;
+}
+.operatore{
+    background-color:yellow;
+    
+}
+.uguale{
+     background-color:orange;
+}
+.cancella{
+    background-color:red;
+}
