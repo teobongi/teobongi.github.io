@@ -1,0 +1,287 @@
+<html>
+<head>
+     <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        let z=0;
+        var j=0;
+        var q=0;
+        var p=0;
+        function addizione(){
+            if(j==0){
+                x=document.getElementById('numero').value;
+                j=1;
+            }
+            else{
+                var y=document.getElementById('numero').value;
+                if(p==1){
+                    q=1;
+                    p=0;
+                }
+                if(q==1)
+                    x=x*1+y*1;
+                else if(q==2)
+                    x=x*1-y*1;
+                else if(q==3)
+                    x=(x*1)*(y*1);
+                else if(q==4)
+                    x=(x*1)/(y*1);
+                else if(q==5)
+                    x=(x*1)**(y*1);
+                else
+                    x=(x*1)%(y*1);
+            }
+            q=1;
+            document.getElementById('numero').value="";
+        }
+        function differenza(){
+            if(j==0){
+                x=document.getElementById('numero').value;
+                j=1;
+            }
+            else{
+                var y=document.getElementById('numero').value;
+                if(p==1){
+                    q=2;
+                    p=0;
+                }
+                if(q==1)
+                    x=x*1+y*1;
+                else if(q==2)
+                    x=x*1-y*1;
+                else if(q==3)
+                    x=(x*1)*(y*1);
+                else if(q==4)
+                    x=(x*1)/(y*1);
+                else if(q==5)
+                    x=(x*1)**(y*1);
+                else
+                    x=(x*1)%(y*1);
+            }
+            document.getElementById('numero').value="";
+            q=2;
+        }
+        function prodotto(){
+            if(j==0){
+                x=document.getElementById('numero').value;
+                j=1;
+            }
+            else{
+                var y=document.getElementById('numero').value;
+                if(p==1){
+                    q=3;
+                    p=0;
+                }
+                if(q==1)
+                    x=x*1+y*1;
+                else if(q==2)
+                    x=x*1-y*1;
+                else if(q==3)
+                    x=(x*1)*(y*1);
+                else if(q==4)
+                    x=(x*1)/(y*1);
+                else if(q==5)
+                    x=(x*1)**(y*1);
+                else
+                    x=(x*1)%(y*1);
+            }
+            q=3;
+            document.getElementById('numero').value="";
+        }
+        function quoziente(){
+            if(j==0){
+                x=document.getElementById('numero').value;
+                j=1;
+            }
+            else{
+                var y=document.getElementById('numero').value;
+                if(p==1){
+                    q=4;
+                    p=0;
+                }
+                if(q==1)
+                    x=x*1+y*1;
+                else if(q==2)
+                    x=x*1-y*1;
+                else if(q==3)
+                    x=(x*1)*(y*1);
+                else if(q==4)
+                    x=(x*1)/(y*1);
+                else if(q==5)
+                    x=(x*1)**(y*1);
+                else
+                    x=(x*1)%(y*1);
+            }
+            q=4;
+            document.getElementById('numero').value="";
+        }
+        function esponente(){
+            if(j==0){
+                x=document.getElementById('numero').value;
+                j=1;
+            }
+            else{
+                var y=document.getElementById('numero').value;
+                if(p==1){
+                    q=5;
+                    p=0;
+                }
+                if(q==1)
+                    x=x*1+y*1;
+                else if(q==2)
+                    x=x*1-y*1;
+                else if(q==3)
+                    x=(x*1)*(y*1);
+                else if(q==4)
+                    x=(x*1)/(y*1);
+                else if(q==5)
+                    x=(x*1)**(y*1);
+                else
+                    x=(x*1)%(y*1);
+            }
+            q=5;
+            document.getElementById('numero').value="";
+        }
+        function percentuale(){
+            if(j==0){
+                x=document.getElementById('numero').value;
+                j=1;
+            }
+            else{
+                var y=document.getElementById('numero').value;
+                if(p==1){
+                    q=6;
+                    p=0;
+                }
+                if(q==1)
+                    x=x*1+y*1;
+                else if(q==2)
+                    x=x*1-y*1;
+                else if(q==3)
+                    x=(x*1)*(y*1);
+                else if(q==4)
+                    x=(x*1)/(y*1);
+                else if(q==5)
+                    x=(x*1)**(y*1);
+                else
+                    x=(x*1)%(y*1);
+            }
+            q=6;
+            document.getElementById('numero').value="";
+        }
+        function radice(){
+            if(j==0){
+                x=document.getElementById('numero').value;
+            }
+            else{
+                var y=document.getElementById('numero').value;
+                if(q==1)
+                    x=x*1+y*1;
+                else if(q==2)
+                    x=x*1-y*1;
+                else if(q==3)
+                    x=(x*1)*(y*1);
+                else if(q==4)
+                    x=(x*1)/(y*1);
+                else if(q==5)
+                    x=(x*1)**(y*1);
+                else
+                    x=(x*1)%(y*1);
+            }
+            x=Math.sqrt(x);
+            document.getElementById('numero').value=x;
+            a=1;
+        }
+        function o1(){
+            document.getElementById('numero').value+="1";
+        }
+        function o2(){
+            document.getElementById('numero').value+="2";
+        }
+        function o3(){
+            document.getElementById('numero').value+="3";
+        }
+        function o4(){
+            document.getElementById('numero').value+="4";
+        }
+        function o5(){
+            document.getElementById('numero').value+="5";
+        }
+        function o6(){
+            document.getElementById('numero').value+="6";
+        }
+        function o7(){
+            document.getElementById('numero').value+="7";
+        }
+        function o8(){
+            document.getElementById('numero').value+="8";
+        }
+        function o9(){
+            document.getElementById('numero').value+="9";
+        }
+        function o0(){
+            document.getElementById('numero').value+="0";
+        }
+        function uguale(){
+            var y=document.getElementById('numero').value;
+            if(q==1)
+                x=x*1+y*1;
+            else if(q==2)
+                x=x*1-y*1;
+            else if(q==3)
+                x=(x*1)*(y*1);
+            else if(q==4)
+                x=(x*1)/(y*1);
+            else if(q==5)
+                x=(x*1)**(y*1);
+            else
+                x=(x*1)%(y*1);
+            if(j==0 && x=="")
+                document.getElementById('numero').value=y;
+            else if(j==0 && x!="")
+             document.getElementById('numero').value=x+y;
+            else
+                document.getElementById('numero').value=x;
+            x=0;
+            q=0;
+            j=0;
+        }
+        function reset(){
+            document.getElementById('numero').value="";
+            x=0;
+            q=0;
+            j=0;
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>La mia calcolatrice 2.0</h1>
+        
+        <div class= "calcolatrice">
+            <div class="schermo">
+            <input type="text" id="numero"><br><br>
+            </div>
+        <div class= "bottoni">
+        
+        <button class="numero" value="1" onclick="o1()">1</button>
+        <button class="numero" value="2" onclick="o2()">2</button>
+        <button class="numero" value="3" onclick="o3()">3</button>
+        <button class="operatore" value="+" onclick="addizione()"><br>+</button>
+        <button class="numero" value="4" onclick="o4()">4</button>
+        <button class="numero" value="5" onclick="o5()">5</button>
+        <button class="numero" value="6" onclick="o6()">6</button>
+        <button class="operatore" value="-" onclick="differenza()"><br>-</button>
+        <button class="numero" value="7" onclick="o7()">7</button>
+        <button class="numero" value="8" onclick="o8()">8</button>
+        <button class="numero" value="9" onclick="o9()">9</button>
+        <button class="operatore" value="*" onclick="prodotto()"><br>*</button>
+        <button class="numero" value="0" onclick="o0()">0</button>
+        <button class="operatore" value="^" onclick="esponente()">^</button>
+        <button class="operatore" value="√" onclick="radice()">√</button>
+        <button class="operatore" value="/" onclick="quoziente()"><br>/</button>
+        <button class="operatore" value="%" onclick="percentuale()">%</button>
+        <button class="uguale" value="=" onclick="uguale()">=</button>
+        <button class="cancella" value="Canc" onclick="reset()">Canc</button>
+        </div>
+        </div>
+</html>
